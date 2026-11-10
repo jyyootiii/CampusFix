@@ -1,59 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CampusFix</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: navy;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 35px;
-        }
-        header p {
-            margin: 8px;
-            font-size: 16px;
-        }
-        nav {
-            background-color: #B0C4DE;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: navy;
-            margin: 12px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: blue;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFix — Smart Campus Complaint &amp; Maintenance Management System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+
+    <!-- Header Banner -->
+    <header class="site-header">
         <h1>CampusFix</h1>
-        <p>Smart Campus Complaint & Maintenance Management System</p>
+        <p>Smart Campus Complaint &amp; Maintenance Management System</p>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Login/Register</a>
-        <a href="#">Student Dashboard</a>
-        <a href="#">Submit Complaint</a>
-        <a href="#">Complaint History</a>
-        <a href="#">Track Complaint</a>
-        <a href="#">Knowledge Centre</a>
-        <a href="#">Admin Dashboard</a>
-        <a href="#">Reports & Analytics</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+
+    <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-wrap">
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="knowledge.html">Knowledge Centre</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="student/track_complaint.php">Track Complaint</a></li>
+            </ul>
+            <div class="user-nav-status">
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+            </div>
+        </div>
     </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Welcome Introduction Panel -->
+        <div class="panel" style="text-align: center; padding: 40px 30px;">
+            <h2 style="color: #0b3c68; margin-bottom: 14px; font-size: 28px; font-weight: 700;">Welcome to CampusFix</h2>
+            <p style="color: #475569; max-width: 900px; margin: 0 auto 26px; font-size: 16px; line-height: 1.7;">
+                CampusFix is a centralized digital complaint and maintenance management portal for college students, faculty, and administrative staff. 
+                Report campus infrastructure issues, track repairs in real-time, and ensure timely resolution across hostels, laboratories, and classrooms.
+            </p>
+            <div id="homeHeroButtons" style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+                <a href="login.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 16px;">Student Login</a>
+                <a href="register.html" class="btn btn-secondary" style="padding: 12px 28px; font-size: 16px;">New Student Registration</a>
+                <a href="student/track_complaint.php" class="btn btn-secondary" style="padding: 12px 28px; font-size: 16px;">Track Existing Complaint</a>
+            </div>
+        </div>
+
+        <!-- Problem Statement & Proposed System -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; margin-bottom: 24px;">
+            <div class="panel" style="margin-bottom: 0;">
+                <div class="panel-header">
+                    <span class="panel-title">The Problem We Solve</span>
+                </div>
+                <p style="color: #475569; margin-bottom: 14px; font-size: 15px; line-height: 1.6;">
+                    Traditional manual complaint handling in college institutions has multiple drawbacks:
+                </p>
+                <ul style="padding-left: 20px; color: #475569; font-size: 14px; line-height: 1.8;">
+                    <li>Complaints written in physical registers get delayed or overlooked.</li>
+                    <li>Students cannot check the status of their repair requests.</li>
+                    <li>Lack of technician accountability and resolution timelines.</li>
+                    <li>No structured mechanism to record student feedback post-repair.</li>
+                </ul>
+            </div>
+
+            <div class="panel" style="margin-bottom: 0;">
+                <div class="panel-header">
+                    <span class="panel-title">Proposed Digital Solution</span>
+                </div>
+                <p style="color: #475569; margin-bottom: 14px; font-size: 15px; line-height: 1.6;">
+                    CampusFix streamlines campus facility maintenance with a modern digital pipeline:
+                </p>
+                <ul style="padding-left: 20px; color: #475569; font-size: 14px; line-height: 1.8;">
+                    <li>Unique tracking ID generated for every registered complaint.</li>
+                    <li>Categorized dispatch for electrical, plumbing, network, and equipment.</li>
+                    <li>Transparent 3-stage progress: <strong>Submitted &rarr; In Progress &rarr; Resolved</strong>.</li>
+                    <li>5-Star rating system to maintain quality campus standards.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="panel">
+            <div class="panel-header">
+                <span class="panel-title">How It Works</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; margin-top: 14px;">
+                <div style="background: #fafbfc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 4px; text-align: center;">
+                    <div style="font-weight: bold; color: #0b3c68; font-size: 17px; margin-bottom: 8px;">Step 1: Submit</div>
+                    <p style="font-size: 14px; color: #64748b; line-height: 1.5;">Student lodges a ticket with location, description, category, and optional photo.</p>
+                </div>
+                <div style="background: #fafbfc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 4px; text-align: center;">
+                    <div style="font-weight: bold; color: #0b3c68; font-size: 17px; margin-bottom: 8px;">Step 2: Assign</div>
+                    <p style="font-size: 14px; color: #64748b; line-height: 1.5;">Admin reviews ticket, sets priority level, and assigns maintenance personnel.</p>
+                </div>
+                <div style="background: #fafbfc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 4px; text-align: center;">
+                    <div style="font-weight: bold; color: #0b3c68; font-size: 17px; margin-bottom: 8px;">Step 3: Repair</div>
+                    <p style="font-size: 14px; color: #64748b; line-height: 1.5;">Technician resolves the issue and updates status to <em>Resolved</em> with remarks.</p>
+                </div>
+                <div style="background: #fafbfc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 4px; text-align: center;">
+                    <div style="font-weight: bold; color: #0b3c68; font-size: 17px; margin-bottom: 8px;">Step 4: Feedback</div>
+                    <p style="font-size: 14px; color: #64748b; line-height: 1.5;">Student reviews the completed repair and provides a 1-to-5 star rating.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campus Maintenance Notice -->
+        <div class="panel" style="background: #f0f7ff; border-color: #bbdefb; padding: 20px 24px;">
+            <h4 style="color: #0b3c68; font-size: 16px; margin-bottom: 6px; font-weight: 700;">Emergency or Hazardous Issues?</h4>
+            <p style="font-size: 14px; color: #334155; line-height: 1.6;">
+                For direct electrical sparking, smoke, or heavy pipeline breaks, please inform your hostel warden or floor supervisor immediately in addition to filing a ticket online.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p><strong>CampusFix</strong> &copy; 2026 &mdash; Smart Campus Complaint &amp; Maintenance Management System</p>
+        <p style="margin-top: 6px;">
+            <a href="home.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="knowledge.html">Knowledge Centre</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="login.html">Login</a>
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
