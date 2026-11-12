@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us — CampusFix</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <h1>CampusFix</h1>
+
+        <p>Smart Campus Complaint & Maintenance Management System</p>
+
+    </header>
+
+    <nav class="site-nav">
+
+        <div class="nav-wrap">
+
+            <ul class="nav-links">
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="about.html" class="active">About Us</a></li>
+
+                <li><a href="knowledge.html">Knowledge Centre</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li><a href="student/track_complaint.php">Track Complaint</a></li>
+
+            </ul>
+
+            <div class="user-nav-status">
+
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+
+                <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="container">
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="panel-title">About the CampusFix Project</span>
+
+            </div>
+
+            <p style="margin-bottom: 14px; font-size: 14px; line-height: 1.6; color: #444444;">
+
+                <strong>CampusFix</strong> is a web-based campus utility platform created to bridge the communication gap between students and the college maintenance division. In many engineering institutions, facility issues like burnt light fixtures, wobbly lab benches, projector failures, and water leaks take days or weeks to get resolved due to scattered paperwork. CampusFix provides a centralized ticket-based pipeline to log, dispatch, resolve, and audit campus maintenance requests efficiently.
+
+            </p>
+
+            <h3 style="color: #0b3c68; font-size: 15px; margin: 18px 0 8px;">1. Problem Statement</h3>
+
+            <p style="font-size: 13px; line-height: 1.6; color: #555555; margin-bottom: 10px;">
+
+                In traditional campus setups:
+
+            </p>
+
+            <ul style="padding-left: 20px; font-size: 13px; line-height: 1.7; color: #555555; margin-bottom: 15px;">
+
+                <li>Complaints are logged in physical registers at hostel gates or lab assistant desks and are frequently forgotten.</li>
+
+                <li>Students have no direct mechanism to verify whether a technician was ever assigned.</li>
+
+                <li>Facility heads cannot track recurrent equipment defects or monitor resolution speed.</li>
+
+                <li>No formal student feedback is recorded to review work quality.</li>
+
+            </ul>
+
+            <h3 style="color: #0b3c68; font-size: 15px; margin: 18px 0 8px;">2. Project Objectives</h3>
+
+            <ul style="padding-left: 20px; font-size: 13px; line-height: 1.7; color: #555555; margin-bottom: 15px;">
+
+                <li>Provide an intuitive digital form to lodge complaints with location, priority, and optional photos.</li>
+
+                <li>Issue an automated unique Complaint ID for real-time tracking.</li>
+
+                <li>Provide administrators with a triage control center to assign staff and log status remarks.</li>
+
+                <li>Maintain a reliable historical audit trail of all status transitions (Submitted &rarr; In Progress &rarr; Resolved).</li>
+
+                <li>Collect structured 1-to-5 star student satisfaction feedback upon ticket resolution.</li>
+
+            </ul>
+
+            <h3 style="color: #0b3c68; font-size: 15px; margin: 18px 0 8px;">3. Technologies Used</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 10px;">
+
+                <div style="background: #fafbfc; border: 1px solid #e1e4e8; padding: 12px; border-radius: 4px;">
+
+                    <strong style="color: #0b3c68;">Frontend</strong>
+
+                    <p style="font-size: 12px; color: #666666; margin-top: 3px;">HTML5 structure, CSS3 styling, and Vanilla JavaScript for client-side filtering and previews.</p>
+
+                </div>
+
+                <div style="background: #fafbfc; border: 1px solid #e1e4e8; padding: 12px; border-radius: 4px;">
+
+                    <strong style="color: #0b3c68;">Backend</strong>
+
+                    <p style="font-size: 12px; color: #666666; margin-top: 3px;">Core PHP 8.x with native session management and BCrypt password encryption.</p>
+
+                </div>
+
+                <div style="background: #fafbfc; border: 1px solid #e1e4e8; padding: 12px; border-radius: 4px;">
+
+                    <strong style="color: #0b3c68;">Database</strong>
+
+                    <p style="font-size: 12px; color: #666666; margin-top: 3px;">SQLite 3 connected via PHP Data Objects (PDO) with prepared statements and foreign keys.</p>
+
+                </div>
+
+                <div style="background: #fafbfc; border: 1px solid #e1e4e8; padding: 12px; border-radius: 4px;">
+
+                    <strong style="color: #0b3c68;">Runtime</strong>
+
+                    <p style="font-size: 12px; color: #666666; margin-top: 3px;">PHP Built-in Server on Windows 10/11 with zero external server dependencies.</p>
+
+                </div>
+
+            </div>
+
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #e1e4e8; font-size: 12px; color: #777777;">
+
+                B.Tech Computer Science &amp; Engineering &bull; Minor / Final Year Project Implementation
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p><strong>CampusFix</strong> &copy; 2026 &mdash; Smart Campus Complaint & Maintenance Management System</p>
+
+        <p style="margin-top: 4px;">
+
+            <a href="home.html">Home</a> |
+
+            <a href="knowledge.html">Knowledge Centre</a> |
+
+            <a href="contact.html">Contact</a> |
+
+            <a href="login.html">Login</a>
+
+        </p>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
