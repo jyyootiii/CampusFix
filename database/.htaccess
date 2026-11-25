@@ -1,0 +1,6 @@
+# Deny direct browser access to SQLite database files
+<Files ~ "\.(db|sqlite|sqlite3)$">
+    Order deny,allow
+    Deny from all
+</Files>
+
