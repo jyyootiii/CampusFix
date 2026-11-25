@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — CampusFix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header Banner -->
+    <header class="site-header">
+        <h1>CampusFix</h1>
+        <p>Smart Campus Complaint &amp; Maintenance Management System</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-wrap">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="knowledge.html">Knowledge Centre</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="student/track_complaint.php">Track Complaint</a></li>
+            </ul>
+            <div class="user-nav-status">
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px;">
+            
+            <!-- Contact Form -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Send a Message</span>
+                </div>
+
+                <p style="font-size: 14px; color: #64748b; margin-bottom: 20px;">
+                    Have general questions regarding campus facilities or need maintenance assistance? Send us a message.
+                </p>
+
+                <div id="statusAlert" style="display: none;"></div>
+
+                <form method="POST" action="contact.php">
+                    <div class="form-group">
+                        <label for="name">Your Full Name: <span style="color: #dc2626;">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Campus Email Address: <span style="color: #dc2626;">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="e.g. rahul@college.edu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject: <span style="color: #dc2626;">*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g. Request for hostel water cooler inspection" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message: <span style="color: #dc2626;">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your inquiry or message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="padding: 12px 28px; font-size: 15px;">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <!-- Maintenance Office Details -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Campus Estate &amp; Maintenance Office</span>
+                </div>
+
+                <div style="margin-bottom: 18px; font-size: 15px; line-height: 1.7;">
+                    <strong style="color: #0b3c68;">Office Location:</strong>
+                    <p style="color: #475569; margin-top: 2px;">Ground Floor, Administrative Block, Main Campus</p>
+                </div>
+
+                <div style="margin-bottom: 18px; font-size: 15px; line-height: 1.7;">
+                    <strong style="color: #0b3c68;">Helpdesk Timings:</strong>
+                    <p style="color: #475569; margin-top: 2px;">Monday to Saturday &bull; 08:30 AM &ndash; 05:30 PM</p>
+                </div>
+
+                <div style="margin-bottom: 18px; font-size: 15px; line-height: 1.8;">
+                    <strong style="color: #0b3c68;">Emergency Control Numbers:</strong>
+                    <p style="color: #475569; margin-top: 2px;">
+                        &bull; Electrical Control Room: +91 98765 43210<br>
+                        &bull; Plumbing &amp; Water Works: +91 98765 43211<br>
+                        &bull; IT &amp; Campus Wi-Fi Desk: +91 98765 43212
+                    </p>
+                </div>
+
+                <div style="background: #f0f7ff; border: 1px solid #bbdefb; border-radius: 4px; padding: 16px; font-size: 14px; color: #0b3c68; line-height: 1.6;">
+                    <strong>Note:</strong> Messages sent here are reviewed by the maintenance supervisor. To report a broken fixture in your room or lab, please register/login and lodge an official complaint ticket instead.
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p><strong>CampusFix</strong> &copy; 2026 &mdash; Smart Campus Complaint &amp; Maintenance Management System</p>
+        <p style="margin-top: 6px;">
+            <a href="home.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="knowledge.html">Knowledge Centre</a> | 
+            <a href="login.html">Login</a>
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

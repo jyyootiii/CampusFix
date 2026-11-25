@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFix — Student Registration</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Banner -->
+    <header class="site-header">
+        <h1>CampusFix</h1>
+        <p>Smart Campus Complaint &amp; Maintenance Management System</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-wrap">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="knowledge.html">Knowledge Centre</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="student/track_complaint.php">Track Complaint</a></li>
+            </ul>
+            <div class="user-nav-status">
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm active">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <div class="auth-container">
+            <div class="panel">
+                <div class="panel-header"
+                    style="text-align: center; display: block; border-bottom: 2px solid #eef2f6; padding-bottom: 15px; margin-bottom: 22px;">
+                    <h2 style="font-size: 24px; font-weight: 700; color: #0b3c68;">Student Registration</h2>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 5px;">Create an account to lodge and track
+                        maintenance complaints</p>
+                </div>
+
+                <!-- Dynamic Alert Message -->
+                <div id="statusAlert" style="display: none;"></div>
+
+                <form method="POST" action="register.php">
+                    <div class="form-group">
+                        <label for="name">Full Name: <span style="color: #dc2626;">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Campus Email Address: <span style="color: #dc2626;">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="e.g. rahul@college.edu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student_id">Student ID / Roll Number: <span style="color: #dc2626;">*</span></label>
+                        <input type="text" id="student_id" name="student_id" placeholder="e.g. 21BCE1042" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password (minimum 8 characters): <span
+                                style="color: #dc2626;">*</span></label>
+                        <input type="password" id="password" name="password" placeholder="Create a secure password" required
+                            minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password: <span style="color: #dc2626;">*</span></label>
+                        <input type="password" id="confirm_password" name="confirm_password"
+                            placeholder="Re-enter your password" required minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Account Role:</label>
+                        <input type="text" value="Student" disabled
+                            style="background-color: #f1f5f9; cursor: not-allowed; color: #64748b;">
+                        <p class="field-help">Public registration is strictly for students.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block"
+                        style="padding: 12px; margin-top: 15px; font-size: 16px;">Create Account</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #555555;">
+                    Already have an account? <a href="login.html"
+                        style="color: #1976d2; font-weight: bold; text-decoration: none;">Login Here</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p><strong>CampusFix</strong> &copy; 2026 &mdash; Smart Campus Complaint &amp; Maintenance Management System</p>
+        <p style="margin-top: 6px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="login.html">Login</a>
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
